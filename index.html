@@ -1,0 +1,17 @@
+<!doctype html>
+<html ng-app="demo">
+	<head>
+		<title>Glows Demo</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+    	<script src="demo.js"></script>
+	</head>
+
+	<body>
+		<div ng-controller="Name">
+			<p>Your name is {{name.first}} {{name.last}}</p>
+		</div>
+		<div ng-controller="Schedule">
+			<p>The next available appointment is in {{schedule.days}} days</p>
+		</div>
+	</body>
+</html>
