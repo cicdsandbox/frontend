@@ -1,0 +1,25 @@
+/* Because a tags in this component have no href */
+a:hover {
+ cursor:pointer;
+}
+
+.application-progress-bar {
+  width: inherit;
+  background-color: white;
+  height: 95px;
+}
+
+.progress-bar-item {
+  width: 9.09%;
+  height: 95px;
+  padding-top: 10px;
+  float: left;
+  text-align: center;
+  color: black;
+  font-size: 14px;
+}
+
+.progress-bar-item.active {
+  background-color: darkblue;
+  color: white;
+}

@@ -1,0 +1,23 @@
+.form-card {
+  width: 100%;
+  background-color: white;
+  padding: 10px;
+}
+
+.width-limiter {
+  width: 400px;
+}
+
+.card-spacer {
+  width: 100%;
+  background-color: inherit;
+  padding: 10px 0;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.btn-continue {
+  float: right;
+}

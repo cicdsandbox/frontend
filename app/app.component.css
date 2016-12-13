@@ -1,0 +1,33 @@
+#header {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px;
+  background-color: blue;
+}
+
+#middle {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: lightgrey;
+}
+
+#content {
+  width: 800px;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#footer {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px;
+  background-color: blue;
+}
+
+h1 {
+  font-size: 3.2em;
+  color: white;
+  margin: 0;
+  padding: 10px;
+}

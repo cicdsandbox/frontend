@@ -1,0 +1,88 @@
+<application-progress-bar></application-progress-bar>
+
+<div class="card-spacer center-text">
+  <h3>Phone Numbers</h3>
+</div>
+
+<div *ngIf="application_data">
+  <div class="form-card">
+    <form #f="ngForm">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-11">
+            <h2>What's your phone number?</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-11">
+            <h4>At least one phone number is required.</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-3">
+            <label for="number_format">* Phone Number Format:</label>
+          </div>
+          <div class="col-xs-1"></div>
+          <div class="col-xs-2">
+            <label for="phone_type">* Phone Type:</label>
+          </div>
+          <div class="col-xs-3">
+            <label for="number">* Phone Number:</label>
+          </div>
+          <div class="col-xs-2">
+            <label for="extension">Extension:</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-3">
+            <select class="form-control" id="number_format" name="number_format"  [(ngModel)]="application_data.phone_numbers[0].number_format">
+              <option selected disabled hidden style='display: none' value=''></option>
+              <option value="us">United States</option>
+              <option value="can">Canada</option>
+              <option value="mex">Mexico</option>
+              <option value="other">Other International</option>
+            </select>
+          </div>
+          <div class="col-xs-1">
+            <fa [name]="'question'"></fa>
+          </div>
+          <div class="col-xs-2">
+            <select class="form-control" id="phone_type" name="phone_type" [(ngModel)]="application_data.phone_numbers[0].phone_type">
+              <option selected disabled hidden style='display: none' value=''></option>
+              <option value="home">home</option>
+              <option value="mobile">mobile</option>
+              <option value="work">work</option>
+            </select>
+          </div>
+          <div class="col-xs-3">
+            <input class="form-control" id="number" name="number" [(ngModel)]="application_data.phone_numbers[0].number">
+          </div>
+          <div class="col-xs-2">
+            <input class="form-control" id="extension" name="extension" [(ngModel)]="application_data.phone_numbers[0].extension">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-11">
+            <fa [name]="'plus'"></fa>
+             Add Another Phone Number
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="card-spacer"></div>
+
+<div>
+  <button type="button" class="btn btn-secondary" (click)="saveAndBack()">
+    <fa [name]="'chevron-left'"></fa>
+    BACK
+  </button>
+  <button type="button" class="btn btn-primary btn-continue">
+    SAVE &amp; CONTINUE
+    <fa [name]="'chevron-right'"></fa>
+  </button>
+</div>
+
+<div class="card-spacer"></div>
